@@ -11,7 +11,7 @@ describe('todo-list', () => {
 
   it('Is initialized!', async () => {
     // Add your test here.
-    const tx = await program.rpc.initialize({});
+    const tx = await program.rpc.initializeList({});
     console.log("Your transaction signature", tx);
   });
 });
