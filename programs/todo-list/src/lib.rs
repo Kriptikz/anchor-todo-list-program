@@ -4,6 +4,7 @@ declare_id!("57p2dLPetHZKhBw78PbMPwiW1fLwfEMziA8xLd3r5kvm");
 
 #[program]
 pub mod todo_list {
+
     use super::*;
     pub fn initialize_list(ctx: Context<InitializeList>) -> ProgramResult {
         Ok(())
@@ -11,7 +12,8 @@ pub mod todo_list {
 }
 
 #[derive(Accounts)]
-pub struct InitializeList {}
+pub struct InitializeList {
+}
 
 #[derive(Debug, Clone, AnchorSerialize, AnchorDeserialize)]
 pub struct Task {
